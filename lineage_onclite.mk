@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022-2023 The LineageOS Project
+# Copyright (C) 2019-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,21 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from onclite device
 $(call inherit-product, device/xiaomi/onclite/device.mk)
 
-# Inherit some common PixelExtended stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# PixelExtended Official Stuff
-PEX_BUILD_TYPE := OFFICIAL
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-
-# Boot Animation
-TARGET_BOOT_ANIMATION_RES := 720
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_onclite
+PRODUCT_NAME := lineage_onclite
 PRODUCT_DEVICE := onclite
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7
