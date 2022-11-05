@@ -195,6 +195,10 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VNDK_VERSION := current
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
+# Additional Kernel Flags
+TARGET_KERNEL_ADDITIONAL_FLAGS +=
+HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" LLVM=1 LLVM_IAS=1
+
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
