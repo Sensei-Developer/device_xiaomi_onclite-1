@@ -467,7 +467,21 @@
     <!-- Minimum velocity to initiate a fling, as measured in dips per second. -->
     <dimen name="config_viewMinFlingVelocity">160dp</dimen>
 
+<<<<<<< HEAD
     <!-- Maximum velocity to initiate a fling, as measured in dips per second. -->
     <dimen name="config_viewMaxFlingVelocity">20000dp</dimen>
 >>>>>>> c3d52c5 (onclite: overlay: Improve scrolling responsiveness)
+=======
+    <!-- Whether to post reset runnable for all clients. Needed for some older
+         vendor fingerprint HAL implementations. -->
+    <bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
+
+    <!-- Whether to cancel fingerprint operation if not idle -->
+    <bool name="config_fpCancelIfNotIdle">true</bool>
+    <!-- Minimum velocity to initiate a fling, as measured in dips per second. -->
+    <dimen name="config_viewMinFlingVelocity">160dp</dimen>
+
+    <!-- Maximum velocity to initiate a fling, as measured in dips per second. -->
+    <dimen name="config_viewMaxFlingVelocity">20000dp</dimen>
+>>>>>>> 28f60e9 (onclite: overlay: Improve scrolling responsiveness)
 </resources>
