@@ -63,8 +63,8 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
 # Iorap
-iorapd.perfetto.enable=true
-iorapd.readahead.enable=true
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
 vendor.iop.enable_prefetch_ofr=1
 
 # Keyguard
@@ -81,7 +81,7 @@ vendor.vidc.enc.disable_bframes=1
 ro.control_privapp_permissions=log
 
 # Perfetto
-persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
