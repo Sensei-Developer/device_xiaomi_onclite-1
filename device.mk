@@ -120,7 +120,6 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth.audio@2.0-impl \
-    libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
@@ -170,7 +169,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
@@ -181,7 +179,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData \
     libqdMetaData.system \
-    libgenlock \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor
 
@@ -194,14 +191,7 @@ PRODUCT_PACKAGES += \
 
 # Ebtables
 PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
-    libebtc
-
-# FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
+    ebtables
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
@@ -246,10 +236,6 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
-
-# HW crypto
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # Init
 PRODUCT_PACKAGES += \
@@ -334,7 +320,6 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
-    libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
@@ -351,7 +336,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0.vendor \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor \
-    android.hardware.power-service.onclite-libperfmgr
 
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -387,7 +371,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.qcom.bt.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh
 
@@ -403,7 +386,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
     librmnetctl \
-    libcnefeatureconfig \
     libxml2 \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
@@ -456,11 +438,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     libcld80211 \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
-    dhcpcd.conf \
     wcnss_service \
     wificond \
     wpa_supplicant \
