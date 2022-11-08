@@ -80,6 +80,9 @@ vendor.vidc.enc.disable_bframes=1
 # Perfetto
 persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 
+#Perf
+iop.enable_uxe=1
+
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
