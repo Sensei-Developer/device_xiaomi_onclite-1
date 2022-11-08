@@ -116,6 +116,9 @@ persist.service.lgospd.enable=0
 persist.service.pcsync.enable=0
 ro.config.avoid_gfx_accel=true
 
+# Service reschedule
+persist.sys.am.reschedule_service=true
+
 # WFD
 persist.debug.wfd.enable=1
 media.wfd.max_resolution=8
