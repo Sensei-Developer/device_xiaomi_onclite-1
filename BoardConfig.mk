@@ -197,7 +197,7 @@ BOARD_VNDK_VERSION := current
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # Additional Kernel Flags
-TARGET_KERNEL_ADDITIONAL_FLAGS +=
+TARGET_KERNEL_ADDITIONAL_FLAGS += LLVM_IAS=1
 HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" LLVM=1 LLVM_IAS=1
 
 # Vendor security patch level
